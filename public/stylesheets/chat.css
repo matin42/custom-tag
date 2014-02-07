@@ -1,0 +1,18 @@
+div#stream {
+  padding: 10px
+}
+div#chat-area {
+  height: 200px;
+  overflow: auto;
+  padding: 8px;
+}
+
+div#chat-area .notice {
+  color: green;
+}
+div#chat-area .you {
+  color: orange;
+}
+div#newMessage {
+    padding: 5px;
+}

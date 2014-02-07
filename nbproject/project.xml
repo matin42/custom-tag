@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.ant.freeform</type>
+    <configuration>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/1">
+            <name>Lan ETS</name>
+        </general-data>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/2">
+            <!-- Do not use Project Properties customizer when editing this file manually. -->
+            <name>Lan ETS</name>
+            <properties>
+                <property name="ant.script">c:\Play\framework\build.xml</property>
+                <property name="application.path">C:\Users\Simon\Desktop\WCG</property>
+                <property name="application.name">Lan ETS</property>
+            </properties>
+            <folders>
+                <source-folder>
+                    <label>.</label>
+                    <location>.</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>app</label>
+                    <type>java</type>
+                    <location>app</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>test</label>
+                    <type>java</type>
+                    <location>test</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+            </folders>
+            <ide-actions>
+            	<action name="clean">
+                    <script>${ant.script}</script>
+                    <target>doNothing</target>
+                    <property name="application.path">${application.path}</property>
+                </action>
+                <action name="build">
+                    <script>${ant.script}</script>
+                    <target>doNothing</target>
+                    <property name="application.path">${application.path}</property>
+                </action>
+                <action name="rebuild">
+                    <script>${ant.script}</script>
+                    <target>doNothing</target>
+                    <property name="application.path">${application.path}</property>
+                </action>
+                <action name="run">
+                    <script>${ant.script}</script>
+                    <target>nb-run-application</target>
+                    <property name="application.path">${application.path}</property>
+                </action>
+                <action name="debug">
+                    <script>${ant.script}</script>
+                    <target>nb-debug</target>
+                    <property name="application.name">${application.name}</property>
+                    <property name="application.path">${application.path}</property>
+                </action>
+                <action name="test">
+                    <script>${ant.script}</script>
+                    <target>test-application</target>
+                    <property name="application.path">${application.path}</property>
+                </action>
+            </ide-actions>
+            <view>
+                <items>
+                    <source-folder style="packages">
+                        <label>app</label>
+                        <location>app</location>
+                        <excludes>views/**</excludes>
+                    </source-folder>
+                    <source-folder style="tree">
+                        <label>app/views</label>
+                        <location>app/views</location>
+                    </source-folder>
+                    <source-folder style="tree">
+                        <label>public</label>
+                        <location>public</location>
+                    </source-folder>
+                    <source-folder style="tree">
+                        <label>conf</label>
+                        <location>conf</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>test</label>
+                        <location>test</location>
+                    </source-folder>   
+                    <source-folder style="tree"><label>modules</label><location>modules</location></source-folder>                 
+                </items>
+                <context-menu>
+                    <ide-action name="run"/>
+                    <ide-action name="debug"/>
+                    <ide-action name="test"/>
+                </context-menu>
+            </view>
+            <subprojects/>
+        </general-data>
+        <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/2">
+            <compilation-unit>
+                <package-root>app</package-root>
+                <package-root>test</package-root>
+                <package-root>C:\Users\Simon\Desktop\WCG\modules\press-1.0.36\app</package-root><package-root>C:\Users\Simon\Desktop\WCG\modules\pdf-0.9\app</package-root><package-root>C:\Users\Simon\Desktop\WCG\lanetstickets\app</package-root>
+                <classpath mode="compile">C:\Users\Simon\Desktop\WCG\conf;c:\Play\framework\play-1.2.5.jar;C:\Users\Simon\Desktop\WCG\modules\press-1.0.36\lib\lesscss-engine-1.3.0.jar;C:\Users\Simon\Desktop\WCG\modules\press-1.0.36\lib\play-press.jar;C:\Users\Simon\Desktop\WCG\modules\press-1.0.36\lib\yuicompressor-2.4.7.jar;C:\Users\Simon\Desktop\WCG\modules\pdf-0.9\lib\core-renderer.jar;C:\Users\Simon\Desktop\WCG\modules\pdf-0.9\lib\itext-2.1.7.jar;C:\Users\Simon\Desktop\WCG\modules\pdf-0.9\lib\jaxen-1.1.1.jar;C:\Users\Simon\Desktop\WCG\modules\pdf-0.9\lib\jtidy-r938.jar;C:\Users\Simon\Desktop\WCG\modules\pdf-0.9\lib\log4j-1.2.16.jar;C:\Users\Simon\Desktop\WCG\modules\pdf-0.9\lib\play-pdf.jar;C:\Users\Simon\Desktop\WCG\modules\pdf-0.9\lib\shani-parser-v1.4.17.jar;C:\Users\Simon\Desktop\WCG\modules\pdf-0.9\lib\xml-apis.jar;C:\Users\Simon\Desktop\WCG\modules\pdf-0.9\lib\yahp-internal.jar;C:\Users\Simon\Desktop\WCG\modules\pdf-0.9\lib\yahp.jar;c:\Play\framework\lib\activation-1.1.1.jar;c:\Play\framework\lib\antlr-2.7.7.jar;c:\Play\framework\lib\asm-all-3.3.1.jar;c:\Play\framework\lib\async-http-client-1.7.4.jar;c:\Play\framework\lib\bcprov-jdk15-1.45.jar;c:\Play\framework\lib\c3p0-0.9.1.2.jar;c:\Play\framework\lib\cglib-nodep-2.2.jar;c:\Play\framework\lib\commons-beanutils-1.8.3.jar;c:\Play\framework\lib\commons-codec-1.4.jar;c:\Play\framework\lib\commons-collections-3.1.jar;c:\Play\framework\lib\commons-email-1.2.jar;c:\Play\framework\lib\commons-fileupload-1.2.2.jar;c:\Play\framework\lib\commons-io-2.0.1.jar;c:\Play\framework\lib\commons-javaflow-1209105.jar;c:\Play\framework\lib\commons-lang-2.6.jar;c:\Play\framework\lib\commons-logging-1.1.1.jar;c:\Play\framework\lib\dom4j-1.6.1.jar;c:\Play\framework\lib\ehcache-core-2.4.3.jar;c:\Play\framework\lib\ezmorph-1.0.3.jar;c:\Play\framework\lib\geronimo-servlet_2.5_spec-1.2.jar;c:\Play\framework\lib\groovy-all-1.8.6.jar;c:\Play\framework\lib\gson-2.2.jar;c:\Play\framework\lib\h2-1.3.166.jar;c:\Play\framework\lib\hibernate-commons-annotations-3.2.0.Final.jar;c:\Play\framework\lib\hibernate-core-3.6.10.Final.jar;c:\Play\framework\lib\hibernate-entitymanager-3.6.10.Final.jar;c:\Play\framework\lib\hibernate-jpa-2.0-api-1.0.1.Final.jar;c:\Play\framework\lib\hibernate-validator-4.1.0.Final.jar;c:\Play\framework\lib\ivy-2.2.0.jar;c:\Play\framework\lib\jamon-2.7.jar;c:\Play\framework\lib\javassist-3.9.0.GA.jar;c:\Play\framework\lib\javax.inject-1.0.jar;c:\Play\framework\lib\jaxb-api-2.2.jar;c:\Play\framework\lib\jaxb-impl-2.1.12.jar;c:\Play\framework\lib\jaxen-1.1.jar;c:\Play\framework\lib\jboss-transaction-api_1.1_spec-1.0.0.Final.jar;c:\Play\framework\lib\jj-imaging.jar;c:\Play\framework\lib\jj-simplecaptcha.jar;c:\Play\framework\lib\jj-textile.jar;c:\Play\framework\lib\jj-wikitext.jar;c:\Play\framework\lib\joda-time-2.1.jar;c:\Play\framework\lib\jregex-1.2_01.jar;c:\Play\framework\lib\jsr107cache-1.0.jar;c:\Play\framework\lib\junit-4.10.jar;c:\Play\framework\lib\log4j-1.2.16.jar;c:\Play\framework\lib\mail-1.4.3.jar;c:\Play\framework\lib\memcached-2.6.jar;c:\Play\framework\lib\mysql-connector-java-5.1.20.jar;c:\Play\framework\lib\netty-3.4.2.Final.jar;c:\Play\framework\lib\org.eclipse.jdt.core-3.7.1.v_B76_R37x.jar;c:\Play\framework\lib\oval-1.50.jar;c:\Play\framework\lib\postgresql-9.0.jar;c:\Play\framework\lib\signpost-core-1.2.jar;c:\Play\framework\lib\slf4j-api-1.6.1.jar;c:\Play\framework\lib\slf4j-log4j12-1.6.1.jar;c:\Play\framework\lib\snakeyaml-1.7.jar;c:\Play\framework\lib\validation-api-1.0.0.GA.jar;c:\Play\framework\lib\xmlpull-1.1.3.1.jar;c:\Play\framework\lib\xstream-1.4.2.jar;nbproject\classes;c:\Play\framework\src</classpath>
+                <built-to>nbproject/classes</built-to>  
+                <source-level>1.5</source-level>                 
+            </compilation-unit>
+        </java-data>
+    </configuration>
+</project>

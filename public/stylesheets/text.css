@@ -1,0 +1,43 @@
+/* 
+    Document   : text
+    Created on : 17-Sep-2010, 1:35:56 AM
+    Author     : riouxm
+    Description:
+        texts styles
+*/
+
+span.green {
+    color:#80c91a;
+}
+
+span.icon_line {
+    line-height:16px;
+}
+
+span.desc {
+    color:#3e3e3e;
+    font-weight:bold;
+}
+
+p {
+    font-size:11px;
+    line-height:15px;
+    margin:5px 0 10px 0;
+}
+p.fit {
+    margin:0;
+}
+p.centered {
+    text-align:center;
+}
+p.warn {
+    color:#cd0c1e;
+}
+
+a {
+    color:#80c91a;
+    text-decoration:none;
+}
+a:hover {
+    color:#c5ff75;
+}

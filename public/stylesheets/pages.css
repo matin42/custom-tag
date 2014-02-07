@@ -1,0 +1,229 @@
+/* 
+    Document   : pages
+    Created on : 18-Sep-2010, 4:24:56 PM
+    Author     : riouxm
+    Description:
+        Single pages stylesheet
+*/
+
+/* INDEX */
+
+div#tournaments {
+    height:231px;
+    margin:0 0 0 10px;
+}
+
+div.news_block {
+    border-top:#292929 dotted 1px;
+    margin-top:20px;
+    padding-top:10px;
+}
+div.news_block.first {
+    border-top:none;
+    margin-top:0;
+    padding-top:0;
+}
+div.news_block h3 span {
+    color:#828282;
+    font-size:10px;
+    margin-right:10px;
+}
+
+div.video_comment {
+    background-color:#000;
+    border:#1c1c1c solid 1px;
+    color:#afafaf;
+    font-size:10px;
+    margin-top:2px;
+    padding:5px;
+}
+div#tournaments div.hide {
+    display:none;
+}
+div#tournaments div.show {
+    display:inline;
+}
+
+div#tournaments ul {
+    list-style-image:none;
+    list-style:none;
+    margin:10px 0 0 12px;
+    position:absolute;
+}
+div#tournaments ul li a {
+    background-color:#101010;
+    border:#272727 solid 1px;
+    display:block;
+    height:15px;
+    line-height:15px;
+    padding: 2px;
+    text-align:center;
+
+}
+div#tournaments ul li a:hover, div#tournaments ul li.up a {
+    background-color:#ed7423;
+    color:#000;
+}
+div#tournaments ul li span {
+    display:none;
+}
+
+
+div.five-col {
+    float:left;
+    margin:10px;
+    width:106px;
+}
+div.five-col a{
+    background:#181818 url(../medias/bg_brackets.jpg) left top no-repeat;
+    border:#333333 solid 1px;
+    display:block;
+    width:106px;
+    height:100px;
+    text-align:center;
+}
+div.five-col a:hover{
+    background-color:#1e1e1e;
+}
+div.five-col a span{
+    display:block;
+    margin-top:36px;
+}
+
+
+/* PUBLIC PROFILE */
+div#userprofil {}
+div#userprofil div.avatar{float:left;margin:0 10px 10px 0;}
+div#userprofil div.infos{
+    float:left;
+}
+div#userprofil div.achievement{
+      background:#161616 url(/medias/bg_alertbox.jpg) repeat-x;
+    float:left;
+    width:250px;
+    margin:5px;
+}
+
+div.achievement {
+    background:#161616 url(/medias/bg_alertbox.jpg) repeat-x;
+    float:left;
+    width:631px;
+   
+    margin:5px;
+}
+div.achievement div.picture {
+    background-color:#161616 url(/medias/bg_alertbox.jpg) repeat-x;
+    width:55px;
+    float:left;
+    padding:2px;
+}
+div.achievement div.desc {
+    width:400px;
+    margin:5px;
+    float:left;
+    padding:2px;
+}
+div.achievement div.desc h3 {
+    margin:0;
+}
+div.achievement div.desc p {
+    margin-bottom:4px;
+    text-align:left;
+}
+
+
+/* Poll */
+div#poll div{
+    margin-top: 10px;
+}
+
+div#poll span{
+    display: inline-block;
+    background-color: #6892d9;
+}
+
+/* Secure */
+div#secure-services  {
+    overflow: hidden; 
+    text-align: center;	
+}
+div#secure-services div {
+    display: inline-block;  
+    margin: 10px 10px;
+    width: 80px;  
+    height: 100px;
+}
+div#secure-services div a {
+    font-size: large;
+    font-weight: bold;
+}
+
+/* TEAM */
+div.teammember {
+    background:#161616 url(/medias/bg_alertbox.jpg) repeat-x;
+    float:left;
+    width:310px;
+    margin:5px;
+}
+div.teammember div.picture {
+    width:90px;
+    float:left;
+    padding:5px;
+}
+div.teammember div.desc {
+    width:200px;
+    margin:5px;
+    float:left;
+}
+div.teammember div.desc h3 {
+    margin:0;
+}
+div.teammember div.desc p {
+    margin-bottom:4px;
+    text-align:left;
+}
+div.teammember div.desc p.mail {
+    margin-top:0;
+    font-size:9px;
+    margin-bottom:5px;
+}
+div.teammember div.desc p.mail a {
+    color:#fff;
+}
+div.teammember div.desc p.prog {
+    font-style:italic;
+}
+div.benevole {
+    background:#161616 url(/medias/bg_alertbox.jpg) repeat-x;
+    float:left;
+    width:196px;
+    margin:5px;
+    padding:5px;
+}
+div.benevole h3 {
+    margin-top:0;
+    margin-bottom:2px;
+}
+div.benevole p {
+    margin-bottom:0;
+}
+
+div.avatar img {
+    width: 108px;
+    height: 108px;
+    background: #000000 url('/medias/avatars_upload/anonymous.gif') no-repeat;
+}
+
+div#account-informations {
+    position: relative;
+}
+div#account-informations .avatar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px 6px 0px 0px;
+}
+
+table#participantslist thead span {
+    cursor: pointer;
+}

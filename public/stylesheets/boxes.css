@@ -1,0 +1,370 @@
+/* 
+    Document   : boxes
+    Created on : 4-Sep-2010, 10:31:33 PM
+    Author     : riouxm
+    Description:
+        boxes master stylesheet
+*/
+
+/* RIGHT COLUMN TITLED BOX */
+
+div#column_right div.titled_box {
+    margin-bottom:3px;
+}
+div#column_right div.titled_box div.title {
+    background:url(../medias/column_right_title_bg.jpg) top left no-repeat;
+    height:48px;
+    line-height:45px;
+    margin:3px 0 0 0;
+    padding:0 0 0 10px;
+    width:650px;
+}
+div#column_right div.titled_box div.notitle {
+    background:url(../medias/column_right_top_bg.jpg) top left no-repeat;
+    height:5px;
+    margin:3px 0 0 0;
+    width:660px;
+}
+div#column_right div.titled_box div.title h2 {
+    margin:0;
+    overflow:hidden;
+}
+div#column_right div.titled_box div.title.em h2 {
+    color:#ae0e0e;
+}
+div#column_right div.titled_box div.title h2 span {
+    color:#828282;
+    float:right;
+    font-size:12px;
+    margin-right:10px;
+}
+div#column_right div.titled_box div.body {
+    background:url(../medias/column_right_body_bg.jpg) top left repeat-y;
+    padding:6px 10px 5px 10px;
+}
+div#column_right div.titled_box div.body span.more {
+    border-top:#292929 dotted 1px;
+    clear:both;
+    display:block;
+    font-size:10px;
+    margin:5px 0 0 0;
+    padding-top:4px;
+    text-align:right;
+}
+div#column_right div.titled_box div.footer {
+    background:url(../medias/column_right_footer_bg.jpg) top left repeat-y;
+    height:5px;
+    width:660px;
+}
+
+div#column_right div.titled_box div.body div.third {
+    background-color:#000;
+    border:#2f2f2f solid 1px;
+    float:left;
+    margin:0 5px 5px 0;
+    padding:0 5px 0 5px;
+    width:198px;
+}
+div#column_right div.titled_box div.body div.third:hover {
+    border-color:#3e3e3e;
+}
+div#column_right div.titled_box div.body div.third.lastline {
+    margin-bottom:0;
+}
+div#column_right div.titled_box div.body div.third p span.desc {
+    color:#d12c53;
+}
+div#column_right div.titled_box div.body div.third.last {
+    margin:0 0 0 0;
+}
+div#column_right div.titled_box div.body div.third.lfd {
+    background:#000 url(../medias/public_gaming_servers/lfd_bg.png) top center no-repeat;
+}
+div#column_right div.titled_box div.body div.third.tfII {
+    background:#000 url(../medias/public_gaming_servers/tfII_bg.png) top center no-repeat;
+}
+div#column_right div.titled_box div.body div.third.cs16 {
+    background:#000 url(../medias/public_gaming_servers/cs16_bg.png) top center no-repeat;
+}
+div#column_right div.titled_box div.body div.third.css {
+    background:#000 url(../medias/public_gaming_servers/css_bg.png) top center no-repeat;
+}
+
+
+
+div#column_right div.titled_box.tournaments div.title {
+    display:none;
+}
+
+div#column_right div.titled_box.tournaments div.body {
+    background:url(../medias/bg_screen_asus.jpg) top left repeat-y;
+	height:405px;
+	padding-top:34px;
+}
+div#column_right div.titled_box.tournaments div.footer {
+    display:none;
+}
+
+
+/* RIGHT COLUMN UNTITLED BOX 
+
+/* LEFT COLUMN TITLED BOX */
+
+div#column_left div.titled_box {
+    margin-bottom:3px;
+}
+div#column_left div.titled_box p {
+    margin-top:0;
+}
+div#column_left div.titled_box div.title {
+    background:url(../medias/column_left_title_bg.jpg) top left no-repeat;
+    height:28px;
+    line-height:25px;
+    padding:0 0 0 10px;
+    width:203px;
+}
+div#column_left div.titled_box div.title h2 {
+    font-size:10px;
+    margin:0;
+    overflow:hidden;
+    text-transform:uppercase;
+}
+div#column_left div.titled_box div.title h2 span {
+    color:#828282;
+    float:right;
+    font-size:12px;
+    margin-right:10px;
+}
+div#column_left div.titled_box div.body {
+    background:url(../medias/column_left_body_bg.jpg) top left repeat-y;
+    padding:6px 10px 5px 10px;
+}
+
+div#column_left div.titled_box div.body h4 {
+    margin-bottom: 5px;
+}
+
+div#column_left div.titled_box div.body span.more {
+    border-top:#292929 dotted 1px;
+    clear:both;
+    display:block;
+    font-size:10px;
+    margin:5px 0 0 0;
+    padding-top:4px;
+    text-align:right;
+}
+div#column_left div.titled_box div.footer {
+    background:url(../medias/column_left_footer_bg.jpg) top left repeat-y;
+    height:5px;
+    width:213px;
+}
+
+/* FULL COLUMN TITLED BOX */
+
+div#column_full div.titled_box {
+    /*margin-bottom:3px;*/
+    padding-bottom:3px;
+}
+div#column_full div.titled_box div.title {
+    background:url(../medias/column_full_title_bg.jpg) top left no-repeat;
+    height:48px;
+    line-height:45px;
+    margin:3px 0 0 0;
+    padding:0 0 0 10px;
+    width:867px;
+}
+div#column_full div.titled_box div.notitle {
+    background:url(../medias/column_full_top_bg.jpg) top left no-repeat;
+    height:5px;
+    margin:3px 0 0 0;
+    width:877px;
+}
+div#column_full div.titled_box div.title h2 {
+    margin:0;
+    overflow:hidden;
+}
+div#column_full div.titled_box div.title h2 span {
+    color:#828282;
+    float:right;
+    font-size:12px;
+    margin-right:10px;
+}
+
+div#column_full div.titled_box div.body {
+    background:url(../medias/column_full_body_bg.jpg) top left repeat-y;
+    padding:6px 10px 5px 10px;
+}
+div#column_full div.titled_box div.body span.more {
+    border-top:#292929 dotted 1px;
+    clear:both;
+    display:block;
+    font-size:10px;
+    margin:5px 0 0 0;
+    padding-top:4px;
+    text-align:right;
+}
+div#column_full div.titled_box div.footer {
+    background:url(../medias/column_full_footer_bg.jpg) top left repeat-y;
+    height:5px;
+    width:877px;
+}
+
+/* TOURNAMENT TITLED BOX */
+
+div#tournamentBlockList div.titled_box div.footer {
+    background:url(../medias/column_left_footer_bg.jpg) top left repeat-y;
+    height:5px;
+    width:213px;
+}
+
+div#tournamentBlockList div.titled_box div.title {
+    background:url(../medias/column_left_title_bg.jpg) top left no-repeat;
+    height:28px;
+    line-height:25px;
+    padding:0 0 0 10px;
+    width:203px;
+}
+
+div#tournamentBlockList div.titled_box div.title h2 {
+    font-size:10px;
+    margin:0;
+    overflow:hidden;
+    color: white;
+    text-transform:uppercase;
+}
+
+div#tournamentBlockList div.titled_box div.title h2 span {
+    display:inline-block;
+    margin-top: 4px;
+    display: none;
+}
+
+div#tournamentBlockList div.titled_box div.body {
+    background:url(../medias/tournament_box_body_bg.jpg) top left repeat-y;
+    padding:6px 10px 5px 10px;
+    min-height: 150px;
+}
+
+div#tournamentBlockList div.titled_box {
+    margin-bottom:3px;
+}
+div#tournamentBlockList div.titled_box p {
+    margin-top:0;
+}
+
+div#tournamentBlockList div.titled_box div.body span.more {
+    border-top:#292929 dotted 1px;
+    clear:both;
+    display:block;
+    font-size:10px;
+    margin:5px 0 0 0;
+    padding-top:4px;
+    text-align:right;
+    width: 190px;
+}
+
+/* BOX TABS */
+div.tabs {
+	padding:0;
+    margin:10px 5px 0 5px;
+}
+
+div.tabs ul {
+	display:block;
+	height:28px;
+	list-style-type: none ;
+}
+
+div.tabs ul li {
+	display:block;
+	float:left;
+	height:25px;
+	
+	margin:0 3px 0 0;
+}
+div.tabs ul li a, div.tabs ul li span {
+	border:#080808  solid 2px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom:none;
+	display:block;
+	height:25px;
+	color:#000;
+	font-weight:bold;
+	padding:0 10px;
+	line-height:25px;
+}
+
+
+div.tabs ul li a {
+	background-color:#080808;
+	color:#ff741f;
+}
+div.tabs ul li a:hover {
+	color:#FFF;
+}
+
+div.tabs ul li span {
+	/* poor's browser rollback */
+	background-color:#80c91d;
+	/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #80C91D 0%, #6AA618 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #80C91D 0%, #6AA618 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #80C91D 0%, #6AA618 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #80C91D), color-stop(1, #6AA618));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #80C91D 0%, #6AA618 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #80C91D 0%, #6AA618 100%);
+}
+
+div.tabs ul li a.selected {
+    
+color: black;
+
+/* poor's browser rollback */
+background-color:#80c91d;
+/* IE10 Consumer Preview */ 
+
+background-image: -ms-linear-gradient(top, #80C91D 0%, #6AA618 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #80C91D 0%, #6AA618 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #80C91D 0%, #6AA618 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #80C91D), color-stop(1, #6AA618));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #80C91D 0%, #6AA618 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #80C91D 0%, #6AA618 100%);
+}
+
+
+div#column_right div.titled_box.tabed {
+	margin-top:-4px;
+}
+
+
+
+/* VIDEO TEASER BOX (frontpage) */
+div#column_right div.titled_box.teaser_box div.title {display:none;}
+div#column_right div.titled_box.teaser_box div.body {background:url(../medias/bg_videobox.png) top left no-repeat;height:569px;}
+div.titled_box.teaser_box div.body div#vid-container {padding-top:133px;}
+

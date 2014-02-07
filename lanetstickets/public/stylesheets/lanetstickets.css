@@ -1,0 +1,104 @@
+div.floatcontainer:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+div.floatcontainer .right {
+    float: right;
+}
+div.floatcontainer .left {
+    float: left;
+}
+
+div#emailticketsmenu div {
+    padding: 0 20px 10px 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+div#emailticketactions {
+    height: 30px;
+    margin: -25px 0 15px 0;
+}
+
+div#emailticket blockquote {
+    margin: 0 0 0 .8ex;
+    border-left: 1px #CCC solid;
+    padding-left: 1ex;
+}
+
+div#emailticket .btnMore {
+    margin-left: 10px;
+}
+div#emailticket input {
+    margin-left: 10px;
+}
+
+div#replyactions {
+    margin: 5px 0 5px 0;
+}
+
+div#replyactions span {
+    padding-left: 480px;
+}
+
+div#showreplyactions {
+    margin: 10px 0 5px 0;
+}
+
+div#emailticket .btnReply, div#emailticket .btnShowReply {
+    font-size: 13px;
+    padding: 4px 20px;
+}
+
+div#emailticket .more {
+    display: none;
+    padding: 0px 0px 10px 10px;
+}
+div#emailticket .more div span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+div#emailticket .header {
+    height: 30px;
+}
+
+div#emailticket .header .fromName {
+    font-weight: bold;
+}
+
+div#emailticket .header .fromEmail {
+}
+
+div#emailticket .header .sentBy {
+    font-style: italic;
+}
+
+div#emailticket .content {
+    word-wrap: break-word;
+}
+
+div#emailticket pre {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+div#emailticket .signatures a {
+    margin: 0 5px;
+}
+
+table.emailtickets tbody tr {
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+table.emailtickets tbody tr:hover {
+    background: #252525;
+}
+
+table.emailtickets tbody tr.unread {
+    font-weight: bold;
+}

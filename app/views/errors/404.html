@@ -1,0 +1,14 @@
+#{if play.mode.name() == 'DEV'}
+
+        #{404 result /}
+
+#{/if}
+#{else}
+
+#{extends 'errorLayout.html' /}
+#{set title:'Not Found' /}
+<h2>${title}</h2>
+<center>
+    <img src="/medias/404.png" />
+</center>
+#{/else}

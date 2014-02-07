@@ -1,0 +1,84 @@
+/* 
+    Document   : buttons
+    Created on : 12-Sep-2010, 5:29:03 PM
+    Author     : riouxm
+    Description:
+        Custom buttons stylesheet
+*/
+
+a.button {
+    background: transparent url('../medias/bg_button_a.gif') no-repeat scroll top right;
+    color: #fff;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    margin-bottom:5px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+a.button.right {
+    float: right;
+}
+a.button.grey {
+    background-image:url('../medias/bg_button_grey_a.gif');
+}
+
+a.button span {
+    background: transparent url('../medias/bg_button_span.gif') no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 18px;
+}
+a.button.grey span {
+    background-image:url('../medias/bg_button_grey_span.gif');
+}
+
+a.button:hover {
+    color: #cdfa99;
+}
+
+a.button:active {
+    background-position: bottom right;
+    color: #fff;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 18px; /* push text down 1px */
+}
+
+a.bigbutton {
+    display:block;
+    float:left;
+    margin:5px 5px 5px 0;
+    width:138px;
+    height:67px;
+}
+a.bigbutton span {display:none;}
+a.bigbutton#checkin {background-image:url(../medias/bbtn_checkin.jpg);}
+a.bigbutton#canccheckin {background-image:url(../medias/bbtn_canccheckin.jpg);}
+a.bigbutton#accterms {background-image:url(../medias/bbtn_accterms.jpg);}
+a.bigbutton#cancaccterms {background-image:url(../medias/bbtn_cancaccterms.jpg);}
+a.bigbutton#ban {background-image:url(../medias/bbtn_ban.jpg);}
+a.bigbutton#unban {background-image:url(../medias/bbtn_cancban.jpg);}
+
+
+a.medbutton {
+    display:block;
+    float:left;
+    margin:5px 5px 5px 0;
+    width:138px;
+    height:47px;
+}
+a.medbutton span {display:none;}
+a.medbutton#floorplan {background-image:url(../medias/mbtn_floorplan.jpg);}
+a.medbutton#createuser {background-image:url(../medias/mbtn_createuser.jpg);}
+a.medbutton#setvip {background-image:url(../medias/mbtn_vip.jpg);}
+a.medbutton#unsetvip {background-image:url(../medias/mbtn_cancvip.jpg);}
+a.medbutton#setsponsor {background-image:url(../medias/mbtn_setsponsor.jpg);}
+a.medbutton#unsetsponsor {background-image:url(../medias/mbtn_unsetsponsor.jpg);}
+a.medbutton#volunteer {background-image:url(../medias/mbtn_setvolunteer.jpg);}
+a.medbutton#cancvolunteer {background-image:url(../medias/mbtn_unsetvolunteer.jpg);}

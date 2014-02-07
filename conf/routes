@@ -1,0 +1,33 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Module routes
+*       /                                       module:press
+*       /terms_conditions.php                   Application.terms
+
+# Ignored requests
+GET     /crossdomain.xml                        staticFile:public/crossdomain.xml
+GET     /apple-touch-icon.png                   404
+GET     /apple-touch-icon-precomposed.png       404
+GET     /.*.php                                 404
+
+# Home page
+GET     /                                       Caisses.index
+
+# Map static resources from the /app/public folder to the /public path
+GET     /robots.txt                             staticFile:public/robots.txt
+GET     /favicon.ico                            staticFile:public/favicon.ico
+GET     /public/                                staticDir:public
+GET     /medias/                                staticDir:public/medias
+GET     /docs/                                  staticDir:public/docs
+GET     /stylesheets/                           staticDir:public/stylesheets
+GET     /scripts/                               staticDir:public/scripts
+GET     /press/medias/                          staticDir:public/medias
+
+# Caisses Controller
+*       /caisses                                Caisses.index
+*       /caisses/{action}/{<[0-9]+>id}          Caisses.{action}
+*       /caisses/{action}                       Caisses.{action}
+
+

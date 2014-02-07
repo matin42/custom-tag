@@ -1,0 +1,41 @@
+#{if user.getConfirmation().caisse}
+<div style="font-family: Verdana, Geneva, sans-serif;">
+    <div style="font-size: 200%; position:absolute; left:15px; font-weight: bold;">
+        #{if user.lang}
+            ${play.i18n.Messages.getMessage(user.lang, user.ticket.type.label).raw()}
+        #{/if}
+        #{else}
+            ${play.i18n.Messages.get(user.ticket.type.label).raw()}
+        #{/else}
+    </div>
+    <div style="font-size: 200%; position:absolute; left:35px; top:40px; font-weight: bold;">
+        ${user.username}
+    </div>
+    <div style="position: absolute; left:35px; top:85px;">
+        <div style="font-size: 150%">
+            ${user.getName()}
+        </div>
+        <div style="font-size: 150%">
+            ${user.clan?.name}
+        </div>
+    </div>
+    <div style="position: absolute; left:235px; top:85px;">
+        <div style="font-size: 150%">
+            ${user.getMinorMajor()}
+        </div>
+        <div style="font-size: 150%">
+           ${user.ticket.seat?.name}
+        </div>
+    </div>
+</div>
+<div style="position:absolute; top:40px; right:7px;">
+    <img width="110" height="110" src="data:image/png;base64,${qrCode}" />
+</div>
+<span style="clear: both;"></span>
+
+<script language="javascript">
+    $(document).ready({
+        window.print();
+    });
+</script>
+#{/if}

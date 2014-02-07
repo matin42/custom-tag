@@ -1,0 +1,20 @@
+/* 
+    Document   : titles
+    Created on : 8-Sep-2010, 9:46:43 PM
+    Author     : riouxm
+    Description:
+        Titles (H's) main stylesheet
+*/
+
+h1 {display:none;}
+
+h2 {
+    color:#FF741F;
+    font-size:18px;
+    font-weight:normal;
+}
+
+h3 {
+    color:#D35C00;
+    margin:10px 0 5px 0;
+}

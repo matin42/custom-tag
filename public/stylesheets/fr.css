@@ -1,0 +1,25 @@
+/* 
+    Document   : skeleton
+    Created on : 4-Sep-2010, 2:31:43 PM
+    Author     : riouxm
+    Description:
+        french stylesheet
+*/
+
+div#back_wrapper {
+    background:url(/medias/back_wrapper_bg_fr.jpg) top center no-repeat;
+    margin:0 auto 0 auto;
+}
+
+div#main_menu ul li a{
+background-position:left 222px;
+}
+div#main_menu ul li a:hover{
+	background-position:left bottom;
+}
+
+a.bigbutton {background-position:0 0;}
+a.bigbutton:hover {background-position:0 201px;}
+
+a.medbutton {background-position:0 0;}
+a.medbutton:hover {background-position:0 141px;}

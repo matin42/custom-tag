@@ -1,0 +1,101 @@
+*{ Change layout for secure pages }*
+#{if adminLayout || request.domain == "secure.lanets.ca" }
+#{set hideMenu: true /}
+#{set hideLeft: true /}
+#{/if}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta property="og:title" content="Lan ETS 2013" />
+ 
+        <title>#{get 'title' /}</title>
+
+        <!-- Stylesheets -->
+        <link rel="Shortcut Icon" href="/public/favicon.ico" />
+        #{press.compressed-stylesheet /}
+        #{press.stylesheet 'skeleton.css' /}
+        #{press.stylesheet 'titles.css' /}
+        #{press.stylesheet 'text.css' /}
+        #{press.stylesheet 'boxes.css' /}
+        #{press.stylesheet 'buttons.css' /}
+        #{press.stylesheet 'pages.css' /}
+        #{press.stylesheet 'tickets.css' /}
+        #{press.stylesheet 'tournaments.css' /}
+        #{press.stylesheet 'jquery-ui-1.8.24.lanets.css' /}
+        #{press.stylesheet 'jquery.countdown.css' /}
+        #{press.stylesheet 'tables.css' /}
+        #{press.stylesheet 'forums.css' /}
+        #{press.stylesheet 'forms.css' /}
+        #{press.stylesheet 'admin.css' /}
+        #{press.stylesheet 'nivo-slider.css' /}
+        #{press.stylesheet 'nivo-default.css' /}
+        #{press.stylesheet (lang ? lang : 'fr') + '.css' /}        
+
+        <!-- JavaScripts -->
+        #{press.compressed-script /}
+        #{press.script 'jquery-1.8.1.min.js', compress:false /}
+        #{press.script 'jquery-ui-1.8.24.custom.min.js' /}
+        #{press.script 'jquery.countdown.js' /}
+        #{if lang == "fr"}
+            #{press.script 'jquery.countdown-fr.js' /}
+        #{/if}
+        #{press.script 'jquery.nivo.slider.min.js' /}
+        #{press.script 'lanets.js' /}
+        #{press.script 'tiny_mce/tiny_mce.js' /}   
+
+
+
+    </head>
+
+    <body>
+
+        <div id="main_wrapper">
+
+            <div id="back_wrapper">
+
+                <span class="clear"></span>
+
+                <div id="content_area">
+
+                    <div id="master_frame">
+                        <div class="top"></div>
+                        <div class="main">
+
+                            #{if hideLeft}
+                            <div id="column_full">
+
+
+                                #{doLayout /}
+                            </div>
+                            #{/if}
+                            #{else}
+                            <div id="column_left">
+
+
+                            </div>
+
+                            <div id="column_right">
+
+
+
+                                #{doLayout /}
+                            </div>
+                            #{/else}
+
+                            <span class="clear"></span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
+#{if now }
+#{set runTime: (new java.util.Date().getTime()) - now.getTime() /}
+<!-- Served by ${host} on ${now} in ${runTime} ms -->
+#{/if}

@@ -1,0 +1,14 @@
+self: play -> lanetstickets 0.1
+
+require:
+    - play
+    - provided -> guava 1
+    - provided -> jsr305 1
+    - provided -> owasp-java-html-sanitizer 1
+
+repositories:
+  - provided:
+     type:    local
+     artifact:    "${application.path}/jars/[module].jar"
+     contains:
+      - provided -> *

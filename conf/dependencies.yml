@@ -1,0 +1,16 @@
+# Application dependencies
+
+require:
+    - play
+    - play -> secure
+    - play -> crud
+    - play -> press 1.0.36
+    - play -> gravatar 1.0.2
+    - play -> accesslog 1.2
+    - play -> pdf 0.9
+repositories: 
+    - provided: 
+        type:       local 
+        artifact:   "${application.path}/lib/*.jar" 
+        contains: 
+            - provided -> * 

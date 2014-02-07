@@ -1,0 +1,125 @@
+/* 
+    Document   : forms
+    Created on : 21-Sep-2010, 9:40:28 PM
+    Author     : riouxm
+    Description:
+        forms stylesheet
+*/
+form.encadre {
+    background-color:#0c0c0c;
+    border:#1c1c1c solid 2px;
+    margin:5px;
+    padding:5px;
+}
+form div.errs {
+    background-color:#c49393;
+    border:#da1212 solid 2px;
+    color:#da1212;
+    font-weight:bold;
+    margin-bottom:10px;
+    padding:10px;
+}
+form div.errs ul li{
+    margin-bottom:0;
+}
+form div.buttons {
+    background-color:#1c1c1c;
+    border-bottom:#3e3e3e solid 2px;
+    margin-top:10px;
+    padding:4px;
+    text-align:right;
+}
+form div.buttons input {
+    padding:5px;
+}
+
+form div.el {
+    border-bottom:#1c1c1c solid 1px;
+    margin:5px 0 5px 0;
+    padding:0 0 5px 0;
+	clear:both;
+}
+
+form div.el label{
+    display:block;
+    float:left;
+    width:130px;
+}
+
+form div.el input, form div.el textarea{
+    border:#000 solid 1px;
+}
+
+form div.el div.answer{
+    display:block;
+    margin-left: 130px;
+}
+
+form div.el textarea{
+    width:500px;
+    height:200px;
+}
+
+form div.el span.emoticonradio{
+    margin-right:8px;
+}
+form div.el img{
+    margin-left:2px;
+}
+form div.el span.info{
+    color:#5e5e5e;
+    display:block;
+    margin:5px 0 0 130px;
+}
+
+/* Upper Login form */
+form#login {
+    padding:0;
+}
+form#login label {
+    display:none;
+    margin:0 4px 0 0;
+    padding:0;
+    width:auto;
+}
+
+form#login input {
+    margin:0 4px 0 0;
+    padding:0;
+}
+form input.submit {
+    cursor: pointer;
+    padding: 0px 4px;
+    background:#079aff url(/medias/bg_input_submit.gif) top left repeat-x;
+    border:#66CCFF solid 1px;
+    color:#cfe9ff;
+    font-size:14px;
+    height:22px;
+    line-height:22px;
+}
+form input.submit.disabled {
+    background:#696969 !important;
+    border:#000000 solid 1px;
+    color: #FFFFFF;
+}
+form input.submit.login {
+    width:100px;
+}
+form input.submit:hover {
+    background-color:#079aff;
+    color:#fff;
+}
+form fieldset {
+	border:none;
+	padding:10px;
+}
+form fieldset.passchange label {
+	color:#80c91a;
+}
+
+
+
+
+
+
+

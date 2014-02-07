@@ -1,0 +1,58 @@
+/* 
+    Document   : tables
+    Created on : 19-Sep-2010, 1:06:13 AM
+    Author     : riouxm
+    Description:
+        Tables style
+*/
+
+table {
+    border-collapse:collapse;
+    width:100%;
+}
+
+table tr.pair {
+    background-color:#0d0d0d;
+}
+
+table tr.forum, table tr.topic{
+    border-bottom:#292929 dotted 1px;
+}
+table tr.forum td, table tr.topic td{
+    padding:15px 5px 15px 5px;
+}
+
+table tr td{
+    padding:5px;
+}
+table tr td.forum_title img, table tr td.topic_title img {
+    float:left;
+    margin-right:5px;
+}
+table tr td.forum_title a, table tr td.topic_title a {
+    color:#e35604;
+}
+table tr td.forum_title a, table tr td.topic_title a.blue {
+    font-weight:bold;
+}
+table tr td.forum_title a:hover, table tr td.topic_title a:hover {
+    color:#fe7c31;
+}
+table tr td span.desc{
+    color:#3e3e3e;
+}
+table tr td span.comment{
+    color:#3e3e3e;
+    font-style:italic;
+}
+table tr td span.group_title{
+    color:#3e3e3e;
+    font-style:italic;
+}
+
+table tr th{
+    border-bottom:#3e3e3e dotted 1px;
+    color:#80c91a;
+    padding:5px 5px 5px 2px;
+    text-align:left;
+}

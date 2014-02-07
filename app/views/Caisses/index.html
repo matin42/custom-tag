@@ -1,0 +1,46 @@
+#{extends 'layout.html' /}
+#{set title: 'Custom tag R&D' /}
+
+<div class="titled_box">
+    <div class="title">
+        <h2>Custom tag R&D</h2>
+    </div>
+    <div class="body">
+        #{form @Caisses.generateCustom()}
+        <div class="el">
+            <label for="fname">Nom</label>
+            <input name="username" type="text" size="30" />
+        </div>
+      <!--  <div class="el">
+            <label for="fname">Name</label>
+            <input name="name" type="text" size="30" />
+        </div>
+		-->
+        
+        <div class="el">
+            <label for="fname">Titre</label>
+            <input name="title" type="text" size="30" />
+        </div>
+            
+     <!--   <div class="el">
+            <label for="fname">Clan Name</label>
+            <input name="clan" type="text" size="30" value="R&D 2013" />
+        </div>    
+		-->
+
+        
+            
+        <input name="submit" type="submit" class="submit" value="Validate" />
+        #{/form}
+         #{form @Caisses.generateFromListe()}
+        <div class="el">
+            <label for="fname">Liste</label>
+            <textarea name="list" style="resize:none; width: 500px; height: 500px;" cols="30" rows="150">Le nom et le titre doit être sur une même ligne séparé par une vigule, une personne par ligne</textarea>
+        </div>        
+            
+        <input name="submit" type="submit" class="submit" value="Validate Liste" />
+        #{/form}
+    </div>
+    <div class="footer">
+    </div>
+</div>

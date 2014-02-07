@@ -1,0 +1,458 @@
+/* 
+    Document   : tournaments
+    Created on : 28-Jan-2011, 9:26:30 PM
+    Author     : mrioux
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+div.clanManagementLeft {
+    display: block;
+    float: left;
+    width: 275px;
+}
+
+div.clanManagementRight {
+    display: block;
+    float: left;
+}
+
+div.buttonRow {
+    margin-top: 5px;
+}
+
+div.labelTeamName
+{
+    word-wrap: word-break;
+    display: block;
+}
+
+div.labelTeamName span
+{
+    display: block;
+    float:left;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 10px;
+    margin-left: 5px; 
+}
+
+div.labelTeamName span.player_ok
+{
+    background-image: url(../medias/icons/accept.png);
+}
+
+div.labelTeamName span.player_high
+{
+    background-image: url(../medias/icons/cancel.png);
+}
+
+div.labelTeamName span.player_low
+{
+    background-image: url(../medias/icons/cancel.png);
+}
+
+div.labelTeamName span.hidden
+{
+    display: none;
+}
+
+div.labelTeamName label
+{
+    margin-top: 2px;
+    display: block;
+    float: left;
+}
+
+ul.tournamentRules li 
+{
+    margin-left: 15px;
+}
+
+ul.tournamentRules li 
+{
+    margin-bottom: 10px;
+}
+
+div.myTournamentContainer
+{
+    margin: 10px
+}
+
+div#errorMessage {
+    display: none;
+    margin-bottom: 10px;
+    width: 190px;
+}
+
+div#nameTeamError, div#emptyTeamError { 
+    display: none;
+    margin-bottom: 10px;
+    width: 191px;
+}
+div.subscriptionContainer {
+    margin: 10px;
+}
+
+div.tournamentbloc {
+    margin-bottom:15px;
+}
+
+div.buttons input#buttonCancel, input#buttonSave, input#buttonAdd
+{
+    display: none;
+}
+
+div#removeTeamConfirm, div#removeMemberConfirm, div#createTeamConfirm
+{
+    display: none;
+}
+
+div#clanNameText
+{
+    display: none;
+}
+
+div#clanNameDropDown
+{
+    display: block;
+}
+
+select.tournamentSelection {
+    width: 213px;
+}
+
+div.multiplayerLeft div.tournamentBlockTitle {
+    height:28px;
+    margin-bottom: 15px;
+}
+
+ul.clanMemberList {
+    list-style-type: none;
+    list-style-image: none;
+    min-height: 50px;
+    margin: 10px;
+}
+
+div.confirmBox
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+div.clanLeaderContainer {
+    margin: 10px;
+}
+
+select.clanLeaderChoice {
+    width: 213px;
+}
+
+ul.clanMemberList li.clanMemberBox div {
+    display:inline-block;
+    margin-top: 2px;
+}
+
+input#teamNameSelection
+{
+    width: 207px;
+}
+
+ul.clanMemberList li.clanMemberBox span {
+    position: absolute;
+    right: 0;
+    margin-right: 3px;
+    display: none;
+}
+
+.clanMemberBox {
+    position: relative;
+    display: block;
+    padding: 2px;
+    font-weight: bold;
+    width: 167px;
+    height: 15px;
+    text-align: center;
+    border: 1px solid #222;
+    cursor: auto;
+    
+    /* http://ie.microsoft.com/testdrive/graphics/svggradientbackgroundmaker/default.html */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImczMDYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiMxMTExMTEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiMzMzMzMzMiIG9mZnNldD0iMC41Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzMzMzMzMyIgb2Zmc2V0PSIxIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZzMwNikiIC8+Cjwvc3ZnPg==);
+    border-radius: 2px;
+}
+
+.clanMemberBoxSelectable {
+    background-image: none;
+    background-color: #1896FD;
+    cursor: move;
+    color: black;
+}
+
+.modifyButton
+{
+    display: none;
+}
+
+div.tournamentbloc p.paidgamers {
+    color:#db5304;
+    font-weight:bold;
+    line-height:18px;
+}
+
+div.tournamentbloc p.paidgamers span {
+    background-color:#090909;
+    color:#FFF;
+    border:#272727 solid 1px;
+    padding:0 2px;
+}
+
+div.tournamentbloc div.prizerise {
+    margin:5px;
+    width:630px;
+}
+div.tournamentbloc div.prizerise p {
+    display:block;
+}
+
+div.tournamentbloc p{
+    margin-left:5px;
+    margin-right:5px;
+}
+div.tournamentbloc p img{
+    margin:0 2px;
+}
+
+div.tournamentbloc div.prize {
+    background:url(../medias/prize_bg.jpg) 0 0 no-repeat;
+    float:left;
+    height:57px;
+    margin-left:5px;
+    padding:5px;
+    text-align:center;
+    width:108px;
+}
+div.tournamentbloc div.split {
+    background:url(../medias/split_bg.jpg) 0 0 no-repeat;
+}
+
+div.tournamentbloc div.prize span.pos{
+    color:#cd8e00;
+    font-size:25px;
+}
+div.tournamentbloc div.split span.pos{
+    color:#e15605;
+}
+
+div.tournamentbloc div.prize span.cash{
+    display:block;
+    font-size:15px;
+}
+div.tournamentbloc div.split span.cash{
+    color:#949494;
+}
+
+div.tournamentbloc div.showhidelinks {
+    text-align:center;
+}
+div.tournamentbloc div.showhidelinks a {
+    background-color:#000;
+    border:#222222 solid 1px;
+    display:block;
+    margin:4px;
+    padding:4px;
+}
+div.tournamentbloc div.showhidelinks a img {
+    margin:0 5px;
+}
+
+div#myTournamentTag span.clanMemberBox
+{
+    float: left;
+}
+
+div#myTournamentTag select.tournamentSelection
+{
+    float: left;
+}
+
+div#myTournamentTag a
+{
+    float: left;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+div.tournamentbloc h3 {
+    display:none;
+}
+
+div.tournamentbloc table {
+    margin:5px;
+    width:630px;
+}
+div.tournamentbloc table th {
+    background-color:#000;
+}
+div.tournamentbloc table tbody th {
+    background-color:#222222;
+    text-align:center;
+}
+div.tournamentbloc table th.tickethead {
+    width:135px;
+}
+div.tournamentbloc table tr span.noem {
+    color:#515151;
+}
+
+
+div.adminTournamentList textarea {
+    float:left;
+    width: 50%;
+    height: 115px;
+    margin: 10px;
+    resize: none;
+    background: transparent;
+    color: white;
+    border-color: #FF741F;
+}
+
+div.adminTournamentList div.buttons {
+    float:left;
+    width:150px;
+    margin: 5px;
+}
+
+div.adminTournamentList input {
+    vertical-align: top;
+    margin: 5px;
+    padding: 5px;
+    width: 75px;
+}
+
+div.adminAddLeft {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+div.adminAddRightBottom {
+    display: block;
+    float: right;
+    height: 300px;
+    width: 50%;
+    overflow: auto;
+}
+
+div.adminAddRightTop {
+    text-align: left;
+}
+
+
+select#selectClanName {
+    width: 175px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+div#addLine
+{
+    display: hidden;
+    overflow: hidden;
+}
+
+input#teamNameSelection
+{
+    margin-bottom: 15px;
+    width: 75%;
+}
+
+div#minPlayerMessage, div#teamNameMessage, div#emptyNameMessage {
+    display: none;
+    margin-top: 10px;
+    width: 190px;
+}
+
+div#addLine input#playerSearch
+{
+    width: 171px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+div#removeLine div.adminRemoveBottom
+{
+    width: 220px;
+    overflow: auto;
+    float: right;
+    display:block;
+    height: 300px;
+    padding-left: 20px;
+}
+
+div#removeLine div.adminRemoveTop
+{
+    margin-bottom: 5px;
+}
+
+div#removeLine
+{
+    display: hidden;
+    overflow: hidden;
+}
+
+div#removeLine input#playerSearch
+{
+    width: 168px;
+    margin-top: 5px;
+}
+
+div#removeLine .clanMemberBox
+{
+    cursor: pointer;
+}
+
+div.bannerTournament
+{
+    position: relative;
+}
+
+div.bannerTournament a.registerButton
+{
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
+}
+
+div#notInTournament
+{
+    margin-bottom: 15px;
+}
+
+div.body div.leaveClanContainer
+{
+    text-align: right;
+}
+
+div.ListPartcipationTitle
+{
+    color:#db5304;
+    font-weight:bold;
+    line-height:18px;
+    margin: 5px;
+}
+
+div.ListParticipation
+{
+    margin: 5px 10px 10px 20px;
+}
+
+div.clanLeaderRight
+{
+    float: right;
+}
+
+div.clanLeaderLeft
+{
+    float: left;
+}

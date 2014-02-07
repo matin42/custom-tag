@@ -1,0 +1,22 @@
+#{if play.mode.name() == 'DEV'}
+
+#{500 exception /}
+
+#{/if}
+#{else}
+
+#{extends 'errorLayout.html' /}
+#{set title:'Error' /}
+
+<h2>${title}</h2>
+#{if exception instanceof play.exceptions.PlayException}
+<p>
+    This exception has been logged with id <strong>${exception.id}</strong>.
+</p>
+#{/if}
+
+<center>
+    <a href="http://xkcd.com/1024"><img src="/medias/500.png" /></a>
+</center>
+
+#{/else}

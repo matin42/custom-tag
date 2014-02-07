@@ -1,0 +1,25 @@
+/* 
+    Document   : events
+    Created on : 20-Sep-2012, 6:42:50 PM
+    Author     : Chris
+    Description:
+        Events page
+*/
+
+div#events .events_list {
+    float: left;
+    width: 200px;
+}
+
+div#events .event_details {
+    float: left;
+}
+
+div#events .event_details h4 {
+    margin-bottom: 3px;
+}
+
+div#eventPhotos div {
+    float: left;
+}
+
